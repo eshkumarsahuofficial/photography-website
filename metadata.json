@@ -1,0 +1,6 @@
+{
+  "name": "Capture Studio Photography",
+  "description": "Premium cinematic Indian wedding, portrait, family photography and luxury album design studio in Rajnandgaon, Chhattisgarh.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

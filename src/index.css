@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-gold: #C8A45C;
+  --color-gold-light: #E5C98D;
+  --color-dark-bg: #0D0D0F;
+  --color-dark-surface: #171717;
+  --color-dark-card: #1f1f23;
+  --color-text-main: #F5F1E8;
+  --color-text-muted: #A6A29A;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: #0D0D0F;
+    color: #F5F1E8;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom luxury gold text and border utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF0D0 0%, #C8A45C 50%, #A37F38 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #E5C98D 0%, #C8A45C 50%, #9F7830 100%);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(200, 164, 92, 0.35);
+  box-shadow: 0 0 25px -5px rgba(200, 164, 92, 0.12);
+}
+
+.gold-border-glow:hover {
+  border-color: rgba(200, 164, 92, 0.65);
+  box-shadow: 0 0 30px 0px rgba(200, 164, 92, 0.22);
+}
+
+/* Glass effect */
+.glass-panel {
+  background: rgba(23, 23, 23, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
